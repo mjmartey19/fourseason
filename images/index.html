@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"> <!-- Font awesome css -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <title>Four Season</title>
+</head>
+<body>
+    <!-- Header section start -->
+    <div class="header">
+        <div class="header_1">
+            <div class="buttons">
+                <a href="" class="primary_btn">FREE Trial Lesson</a>
+                <a href="" class="primary_btn">Timetable</a>
+            </div>
+            
+            <div class="social_icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+
+            <div class="contact">
+                <img src="images/phone-top.svg" alt=""> 05 5120 1245
+            </div>
+        </div>
+        <div class="header_2">
+            <ul>
+                <li>
+                   <a href="">HOME</a> 
+                </li>
+                <li>
+                    <a href="">ADULTS <i class="fa fa-caret-down"></i></a> 
+                 </li>
+                 <li>
+                    <a href="">JUNIORS <i class="fa fa-caret-down"></i></a> 
+                 </li>
+                 <li>
+                    <a href="">BOOK NOW <i class="fa fa-caret-down"></i></a> 
+                 </li>
+                 <li>
+                    <a href="">ABOUT US <i class="fa fa-caret-down"></i></a>
+                 </li>
+                 <li>
+                    <a href="">CONTACT</a> 
+                 </li>
+                 <li>
+                    <div class="search_btn">
+                        <i class="fa fa-search"></i> Search
+                     </div>
+                 </li>
+                 
+
+            </ul>
+        </div>
+        <img src="images/logo.svg" class="logo" alt="">
+    </div>
+
+
+    
+ <!-- Swiper -->
+ <div class="mask">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/slide1.jpg"/>
+          <div class="content">
+            <h1>we provide best service</h1>
+            <a href="#about" class="primary_btn">get started</a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/slide2.jpg"/>
+          <div class="content">
+            <h1>making dream come to life</h1>
+            <a href="#about" class="primary_btn">get started</a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/slide3.jpg" />
+          <div class="content">
+            <h1>from concept to creation</h1>
+            <a href="#about" class="primary_btn">get started</a>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-pagination pagination"></div>
+    </div>
+</div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
